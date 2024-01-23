@@ -793,6 +793,8 @@ char *editorPrompt(const Terminal &term, const char *prompt, void (*callback)(ch
 void editorMoveCursor(int key) {
   erow *row = (E.cy >= E.numrows) ? NULL : &E.row[E.cy];
 
+  addUndoAction(aMoveCursor);
+  
   switch (key) {
     case Key::ARROW_LEFT:
       if (E.cx != 0) {
@@ -851,6 +853,10 @@ bool editorProcessKeypress(const Terminal &term) {
 
     case CTRL_KEY('s'):
       editorSave(term);
+      break;
+
+    case CTRL_KEY('z'):
+      doUndo();
       break;
 
     case Key::HOME:
