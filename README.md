@@ -1,2 +1,2 @@
 # Eddy
-Simple, but not to simple, text editor 
+Simple, but not too simple, text editor 
