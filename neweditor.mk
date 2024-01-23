@@ -7,14 +7,14 @@ ProjectName            :=neweditor
 ConfigurationName      :=Debug
 WorkspaceConfiguration := $(ConfigurationName)
 WorkspacePath          :=/media/jmg/New450/src/olcpixelengine/olcPixelGameEngine/isometric/isometric
-ProjectPath            :=/media/jmg/New450/src/neweditor
-IntermediateDirectory  :=../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor
-OutDir                 :=../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor
+ProjectPath            :=/media/jmg/New450/src/neweditor/eddy
+IntermediateDirectory  :=../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy
+OutDir                 :=../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=jose ondina
-Date                   :=21/01/24
+Date                   :=22/01/24
 CodeLitePath           :=/home/jmg/.codelite
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -shared -fPIC
@@ -28,7 +28,7 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
-OutputFile             :=../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/bin/$(ProjectName)
+OutputFile             :=../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/bin/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(ObjectSuffix) 
+Objects0=../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(ObjectSuffix) 
 
 
 
@@ -72,18 +72,18 @@ Objects=$(Objects0)
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): ../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/.d $(Objects) 
-	@mkdir -p "../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor"
+$(OutputFile): ../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/.d $(Objects) 
+	@mkdir -p "../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@mkdir -p "../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor"
-	@mkdir -p ""../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/bin""
+	@mkdir -p "../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy"
+	@mkdir -p ""../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/bin""
 
-../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/.d:
-	@mkdir -p "../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor"
+../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/.d:
+	@mkdir -p "../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy"
 
 PreBuild:
 
@@ -91,16 +91,16 @@ PreBuild:
 ##
 ## Objects
 ##
-../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(ObjectSuffix): main.cpp ../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/jmg/New450/src/neweditor/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(ObjectSuffix) -MF../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(DependSuffix) -MM main.cpp
+../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(ObjectSuffix): main.cpp ../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/media/jmg/New450/src/neweditor/eddy/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(ObjectSuffix) -MF../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(DependSuffix) -MM main.cpp
 
-../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/main.cpp$(PreprocessSuffix) main.cpp
+../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy/main.cpp$(PreprocessSuffix) main.cpp
 
 
--include ../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor//*$(DependSuffix)
+-include ../../olcpixelengine/olcPixelGameEngine/isometric/isometric/build-$(ConfigurationName)/__/__/__/__/neweditor/eddy//*$(DependSuffix)
 ##
 ## Clean
 ##
